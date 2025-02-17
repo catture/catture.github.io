@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    width: 90%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    padding-top: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.item img {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 9 / 16;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+    transition: box-shadow 0.4s ease-in-out; /* Suaviza la transición */
+}
+
+.gallery p{
+    font-size: 25px;
+}
+
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 65px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: white;
+    width: 250px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.download-btn {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.download-btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
