@@ -63,10 +63,6 @@ p {
     line-height: 1.5;
 }
 
-footer {
-    margin-top: 2px;
-}
-
 .fixed-bar {
     position: fixed;
     bottom: 0;
